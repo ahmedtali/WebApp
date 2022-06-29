@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using WebApp.Models;
 
 namespace WebApp.Data
 {
@@ -12,5 +13,6 @@ namespace WebApp.Data
             : base(options)
         {
         }
+        public DbSet<WebApp.Models.Question> Question { get; set; }
     }
 }
